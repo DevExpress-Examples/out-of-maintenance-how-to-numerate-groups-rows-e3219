@@ -4,7 +4,7 @@ Imports System.Collections.Generic
 Imports System.Web
 Imports System.Web.UI
 Imports System.Web.UI.WebControls
-Imports DevExpress.Web.ASPxGridView
+Imports DevExpress.Web
 Imports System.Data
 
 Partial Public Class _Default
@@ -20,7 +20,7 @@ Partial Public Class _Default
 		End Get
 	End Property
 
-	Protected Sub grid_CustomColumnDisplayText(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridView.ASPxGridViewColumnDisplayTextEventArgs)
+	Protected Sub grid_CustomColumnDisplayText(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridViewColumnDisplayTextEventArgs)
 		If e.Column.Name <> "RowNumber" Then
 			Return
 		End If

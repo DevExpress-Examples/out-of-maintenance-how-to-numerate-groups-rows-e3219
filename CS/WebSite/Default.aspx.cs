@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using DevExpress.Web.ASPxGridView;
+using DevExpress.Web;
 using System.Data;
 
 public partial class _Default : System.Web.UI.Page {
@@ -13,7 +13,7 @@ public partial class _Default : System.Web.UI.Page {
 
 	private bool IsGridUngrouped { get { return groupIndexes.Count == 0; } }
 
-	protected void grid_CustomColumnDisplayText(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewColumnDisplayTextEventArgs e) {
+	protected void grid_CustomColumnDisplayText(object sender, DevExpress.Web.ASPxGridViewColumnDisplayTextEventArgs e) {
 		if (e.Column.Name != "RowNumber")
 			return;
 
